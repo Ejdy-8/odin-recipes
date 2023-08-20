@@ -1,0 +1,106 @@
+<!-- 
+    
+
+
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title></title>
+  <link rel="stylesheet" href="main/style.css">
+
+  </head>
+
+  <body>
+    <!-- main header -->
+
+    <header>
+      <h1>Header</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#this_article">This Article</a></li>
+        <li><a href="#">Stuff</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+
+       <!-- A Search form: non-linear way to navigate through a website. -->
+
+       <form>
+         <input 
+            type="search" 
+            name="q" 
+            placeholder="Search query"
+        >
+         <input type="submit" value="Search">
+       </form>
+     </nav>
+
+    <!-- main content -->
+    <main>
+
+      <!-- Article -->
+      <article id="this_article">
+        <h2>This Article</h2>
+
+          <ul>
+            <li>this</li>
+            <li>that</li>
+          </ul>
+
+        <h3>Subsection</h3>
+
+        <div>
+            <canvas 
+                id="myCanvas" 
+                width="200" 
+                height="100" 
+                style="border:1px solid #d3d3d3;"
+            >
+        Your browser does not support the HTML canvas tag.
+            </canvas>
+
+            <script>
+                var c = document.getElementById("myCanvas");
+                var ctx = c.getContext("2d");
+                ctx.beginPath();
+                ctx.arc(95,50,40,0,2*Math.PI);
+                ctx.stroke();
+            </script> 
+        </div>
+
+       
+
+        <h3>Another subsection</h3>
+
+        <p> Subs</p>
+
+          </article>
+
+      <!-- asides can nest in main -->
+      <aside>
+        <h2>Related</h2>
+
+        <ul>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+        </ul>
+      </aside>
+
+    </main>
+
+    <!-- main footer -->
+
+    <footer>
+      <p>©Copyright 2023. All rights reversed.</p>
+    </footer>
+
+  </body>
+</html>
